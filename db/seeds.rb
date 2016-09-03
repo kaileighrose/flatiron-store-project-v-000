@@ -5,6 +5,8 @@
     price: Faker::Number.number(4)
   )
   Category.create(title: Faker::Commerce.department)
+
+  User.create(email: Faker::Internet.email, password: Faker::Internet.password)
 end
 
 counter = 1
